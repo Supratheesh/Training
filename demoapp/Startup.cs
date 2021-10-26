@@ -48,7 +48,7 @@ namespace demoapp
             {
                 endpoints.MapControllers();
             });
-            app.MapWhen();
+           
         }
     }
 }
