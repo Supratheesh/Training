@@ -37,6 +37,8 @@ namespace demoapp
             }
 
             app.UseHttpsRedirection();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
@@ -46,6 +48,7 @@ namespace demoapp
             {
                 endpoints.MapControllers();
             });
+            app.MapWhen();
         }
     }
 }
